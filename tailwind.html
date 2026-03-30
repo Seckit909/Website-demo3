@@ -1,0 +1,642 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tailwind UI Demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<style>
+    body { 
+      font-family: 'Inter', sans-serif;
+      background-image: url('images/bagg-trial.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    .flashcard-container { perspective: 1000px; }
+    .flashcard-container.flipped .flashcard { transform: rotateY(180deg); }
+    
+    
+    .hero-gradient { background: linear-gradient(135deg, #6668f5 0%, #a855f7 100%); }
+    .skill-gradient { background: linear-gradient(135deg, #191b6b 0%, #7726c4 100%); }
+    
+    
+  </style>
+<body class="bg-black text-white">
+
+  <nav class="sticky top-0 z-50 skill-gradient shadow-lg">
+    <div class="container mx-auto px-6 py-3 flex justify-end items-center">
+      <div class="md:flex justify-end space-x-8">
+        <a href="#projects" class="hover:text-purple-300 transition">Portfolio</a>
+        <a href="#skills" class="hover:text-purple-300 transition">Experience</a>
+        <a href="#kontakt" class="hover:text-purple-300 transition">More</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="py-20 text-center">
+    <div class="container mx-auto px-6">
+      <div class="flex justify-center mb-6">
+        <img src="images/alfelade.png" alt="Sarah Eibye" class="h-[300px] object-contain border-b border-purple-900">
+      </div>
+      <h1 class="text-5xl font-bold mb-2">Alfred Thorlaksen</h1>
+      <h2 class="text-lg mb-4 opacity-70 italic">BSc Medialogy, AAU</h2>
+      <p class="text-xl mb-8 opacity-90">Master’s student with strong foundations in UI/UX and Game Design</p>
+      <div class="flex justify-center space-x-4">
+        <a href="#projects" class="bg-white text-purple-900 px-8 py-3 rounded-full font-bold hover:bg-purple-100 transition">Projects</a>
+        <a href="#kontakt" class="border-2 border-white px-8 py-3 rounded-full font-bold hover:bg-white hover:text-black transition">More about me</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="py-12 hero-gradient">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold mb-8 text-white">Skills</h2>
+      <div class="flex flex-wrap justify-center gap-3">
+        <section class="">
+    <div class="container mx-auto px-4">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl hover:bg-white/15 transition">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <span class="mr-2">🎨</span> Design & UX
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">UCD</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">UX</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">UI/UX Research</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Sound design</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Sound editing</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">VFX</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Gamedesign</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">3D Design</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Graphic Design</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">ClipChamp</span>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl hover:bg-white/15 transition">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <span class="mr-2">💻</span> Programming
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">C#</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Python</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Java</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">C++</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">HTML5/CSS3</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Testing</span>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl hover:bg-white/15 transition">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <span class="mr-2">📅</span> Project management
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">SCRUM</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Kanban</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Gantt</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Microsoft Teams</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Figma</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">AGILE</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">PBL</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Communication</span>
+                </div>
+            </div>
+
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl hover:bg-white/15 transition lg:col-span-1">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <span class="mr-2">🛠️</span> Tools
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Unity</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Unreal Engine</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Blender</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">VSCode</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Atom</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Wordpress</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">ML/AI</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">GitHub</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Git</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Microsoft365</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Google Drive</span>
+                </div>
+            </div>
+
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl shadow-xl hover:bg-white/15 transition lg:col-span-1">
+                <h3 class="text-xl font-bold text-white mb-4 flex items-center">
+                    <span class="mr-2">🔍</span> Testing
+                </h3>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Experimentation</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Evaluation</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Validation</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">User Testing</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Usability</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Data Analysis</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Feedback</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10">Trials</span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10"></span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10"></span>
+                    <span class="bg-white/20 text-white px-3 py-1 rounded-full text-sm font-medium border border-white/10"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 md:py-24 bg-transparent">
+    <div class="container mx-auto px-4">
+        
+        <div class="flex flex-col md:flex-row justify-between items-end mb-12 border-b border-white/10 pb-6">
+            <div>
+                <h2 class="text-4xl font-bold text-white mb-2">Highlighted work</h2>
+                <!--<p class="text-white/70"></p> -->
+            </div>
+            <div class="md:block text-purple-100/50 text-sm italic">Tab the cards for more details</div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
+            
+            <div class="flashcard-container group h-[550px] sm:h-[500px] cursor-pointer" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard relative w-full h-full transition-all duration-500 [transform-style:preserve-3d]">
+                    
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] bg-[#e5c3f0] rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/BeeAhero5.jpg" class="w-full h-64 object-cover" alt="ReBuild">
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">UI/UX</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">VFX</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">World Design</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-purple-900 mb-2">Bee a Hero</h3>
+                            <p class="text-purple-800/80">Final Bachelors project.</p>
+                            <div class="absolute bottom-6 left-6 text-purple-900/50 flex items-center text-sm font-bold">
+                                <span>Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#e5c3f0] rounded-3xl p-6 overflow-y-auto shadow-2xl">
+                        <h3 class="text-xl font-bold text-purple-900 mb-4">Bee a Hero</h3>
+                        <p class="text-gray-800 text-sm mb-2 ">Bee a Hero is a transformative game, about the real-life struggles of bees.</p>
+                        <div class="mb-4 flex justify-center mt-4 gap-5">
+                            <a href="https://ronaas.itch.io/beeahero" target="_blank" 
+                            class="inline-block bg-purple-600 text-white w-50 px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                Itch.io
+                            </a>
+                            <a href="https://drive.google.com/file/d/1e83I5sMx6jrKFRd-KIgG0lYyPIJ4A1Wt/view?usp=sharing" target="_blank" 
+                            class="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                AV-Production
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <img src="images/BeeAHero1.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                            <img src="images/BeeAHero2.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                            <img src="images/BeeAHero3.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                            <img src="images/World.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                        </div>
+                        <p class="text-gray-800 text-sm">
+                            During our bachelor project, we developed "Bee a Hero," a game that immerses players in the real-life struggles of bees. Through engaging gameplay and compelling storytelling, we aimed to raise awareness about the critical role bees play in our ecosystem and the challenges they face. The project combined elements of education and entertainment to create a meaningful experience for players, highlighting the importance of conservation efforts for these vital pollinators.
+
+                          </p>
+                          <h3 class="text-purple-900 font-bold text-md mt-4">My Role</h3>
+                          <p class="text-gray-800 text-sm mt-2">
+                            In this project, i worked on VFX and procedural generated enviroments in Unity, as well as other elements such as UI/UX and user testing. I also contributed to the development of the game mechanics and overall design, ensuring a cohesive and engaging player experience. During this project, we interviewed a professional beekeeper, implementing real-life insights into our game design to create an authentic and impactful experience.
+                          </p>
+                          <div class="grid grid-cols-2 gap-2 mb-6 mt-2">
+                            <img src="images/BiavlerAlfr.jpg" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Alfred in Beekeeper suit ">
+                            <img src="images/BiavlerMic.jpg" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Michael in Beekeeper suit ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container group h-[550px] sm:h-[500px] cursor-pointer" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard relative w-full h-full transition-all duration-500 [transform-style:preserve-3d]">
+                    
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] bg-[#e5c3f0] rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/Early Test Street Version(1).png" class="w-full h-64 object-cover" alt="Wayfinding">
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Python</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Unreal Engine</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Mocap</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-purple-900 mb-2">Relived</h3>
+                            <p class="text-purple-800/80">Semester 7 project.</p>
+                            <div class="absolute bottom-6 left-6 text-purple-900/50 flex items-center text-sm font-bold">
+                                <span>Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#e5c3f0] rounded-3xl p-6 overflow-y-auto shadow-2xl">
+                        <h3 class="text-xl font-bold text-purple-900 mb-4">Relived</h3>
+                        <p class="text-gray-800 text-sm mb-2 ">Relived is a Story-based dancing experience that explores the use of Real-Time motion capture technology in game development.</p>
+                        <div class="mb-4 flex justify-center mt-4 gap-5">
+                            <a href="https://drive.google.com/file/d/1YTIBlpfiWWWCEB_LT4vAdCfNrfJivSBg/view?usp=sharing" target="_blank" 
+                            class="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                AV-Production
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <img src="images/Final_Version_Look(1).png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Relived">
+                            <img src="images/Grandroom.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Relived">
+                            <img src="images/Grandma.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Relived">
+                            <img src="images/Worldpop.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Relived">
+                        </div>
+                        <p class="text-gray-800 text-sm">
+                            During our 7th semester project, we developed "Relived," a story-based dancing experience that explores the use of real-time motion capture technology in game development. The project aimed to create an immersive and interactive experience that combines storytelling with dance, allowing players to engage with the narrative through movement. By leveraging motion capture technology, we were able to capture and translate real-life dance movements into the game, creating a unique and dynamic gameplay experience that blurs the lines between player and performer.
+
+                          </p>
+                          <h3 class="text-purple-900 font-bold text-md mt-4">My Role</h3>
+                          <p class="text-gray-800 text-sm mt-2">
+                            In this project, I worked on the development of the real-time motion capture system using python integrations in unreal engine, as well as model rigging and animation. I also contributed to the overall design and implementation of the game mechanics, ensuring a seamless integration of the motion capture technology into the gameplay experience. Additionally, I was involved in user testing and feedback analysis to refine the game's mechanics and enhance player engagement throughout the development process.
+                          </p>
+                          <div class="grid grid-cols-1 gap-2 mb-6 mt-2">
+                            <img src="images/PoseEstimation.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Pose estimation in python">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container group h-[550px] sm:h-[500px] cursor-pointer" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard relative w-full h-full transition-all duration-500 [transform-style:preserve-3d]">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] bg-[#e5c3f0] rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/epley-stol-ny.jpg" class="w-full h-64 object-cover" alt="E-commerce">
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Sound design</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Testing</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">VR Dev</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-purple-900 mb-2">Visually-Induced Motion Sickness</h3>
+                            <p class="text-purple-800/80">Semester 5 Project.</p>
+                            <div class="absolute bottom-6 left-6 text-purple-900/50 flex items-center text-sm font-bold">
+                                <span>Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#e5c3f0] rounded-3xl p-6 overflow-y-auto shadow-2xl">
+                        <h3 class="text-xl font-bold text-purple-900 mb-4">Visually-Induced Motion Sickness</h3>
+                        <p class="text-gray-800 text-sm mb-2 ">This project aimed to create a standardized test for visually-induced motion sickness in a VR environment.</p>
+                        <div class="mb-4 flex justify-center mt-4 gap-5">
+                            <a href="https://ieeexplore.ieee.org/document/10972842" target="_blank" 
+                            class="inline-block bg-purple-600 text-white w-50 px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                Publication
+                            </a>
+                            <a href="https://drive.google.com/file/d/1mal-mLWMAqny6sYqaWdEBs33vIKuprL_/view?usp=sharing" target="_blank" 
+                            class="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                AV-Production
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-1 gap-2 mb-6">
+                            <img src="images/Balls2.0.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Visually-Induced Motion Sickness">
+                            <img src="images/VisualGuideBalls.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Visually-Induced Motion Sickness">
+                            <img src="images/Initial balls.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Visually-Induced Motion Sickness">
+                            
+                        </div>
+                        <p class="text-gray-800 text-sm">
+                            During our 5th semester project, we colaborated with the Copenhagen Hearing and Balance Centre and developed a standardized test for visually-induced motion sickness in a VR environment. The project aimed to create a reliable and consistent method for inducing motion sickness in a controlled setting, allowing for the study and comparison of Visually-Induced Motion Sickness (VIMS) and Physically-Induced Motion Sickness (PIMS). By utilizing a VR environment, we were able to simulate various visual stimuli and conditions that can trigger motion sickness, providing valuable insights into the factors that contribute to VIMS and PIMS. The standardized test we developed can be used for future research and testing in the field of motion sickness, helping to improve our understanding of this phenomenon and develop effective mitigation strategies.
+
+                          </p>
+                          <h3 class="text-purple-900 font-bold text-md mt-4">My Role</h3>
+                          <p class="text-gray-800 text-sm mt-2">
+                            In this project, i worked on sound design and testing, creating an immersive audio experience that complemented the visual stimuli in the VR environment. I also contributed to the development of the standardized test protocol, ensuring that it effectively induced motion sickness while maintaining a controlled and consistent testing environment. Additionally, I was involved in data analysis and interpretation, helping to draw meaningful conclusions from the results of our experiments and contributing to the overall success of the project.
+                          </p>
+                          <div class="grid grid-cols-2 gap-2 mb-6 mt-2">
+                            <img src="images/Med5Ris.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Alfred in Eplei chair ">
+        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flashcard-container group h-[550px] sm:h-[500px] cursor-pointer" onclick="this.classList.toggle('flipped')">
+                <div class="flashcard relative w-full h-full transition-all duration-500 [transform-style:preserve-3d]">
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] bg-[#e5c3f0] rounded-3xl overflow-hidden shadow-2xl">
+                        <img src="images/game1.png" class="w-full h-64 object-cover" alt="Visual Novel">
+                        <div class="p-6">
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Python</span>
+                                <span class="bg-white/40 text-purple-900 px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider">Game Dev</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-purple-900 mb-2">Visual Novel Game</h3>
+                            <p class="text-purple-800/80">A psychological horror visual novel centered on themes of grief and loss, developed in Python using the Ren'Py engine.</p>
+                            <div class="absolute bottom-6 left-6 text-purple-900/50 flex items-center text-sm font-bold">
+                                <span>Read more</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute inset-0 w-full h-full [backface-visibility:hidden] [transform:rotateY(180deg)] bg-[#e5c3f0] rounded-3xl p-8 overflow-y-auto shadow-2xl">
+                        <h3 class="text-xl font-bold text-purple-900 mb-2">The Gloom</h3>
+                        
+                        <p class="text-gray-800 text-sm mb-4">Over a three-month project, we developed a Visual Novel centered on themes of grief and loss. By prioritizing atmospheric sound, text, and visual dynamics over spoken dialogue, we created an open space for interpretation. The result is a powerful, personal experience that allows players to mirror their own emotions directly within the narrative.</p>
+                        <div class="grid grid-cols-2 gap-2 mb-6">
+                            <img src="images/prototyper/game1.png" class="rounded shadow-sm">
+                            <img src="images/prototyper/game2.png" class="rounded shadow-sm">
+                        </div>
+                        <a href="https://docs.google.com/presentation/d/1o5_bmdELa_VZ8e9Xe2Rq49_DDpEhrJuMiU4q9WijBmo/edit?usp=sharing" target="_blank" 
+                           class="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                            See presentation
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skill-gradient py-16">
+    <div class="container mx-auto px-4 max-w-4xl">
+        <div class="text-center mb-12">
+            <img src="images/student.png" class="h-20 mx-auto mb-4" alt="student ikon">
+            <h1 class="text-4xl font-bold text-white mb-4">Experience</h1>
+            <p class="text-white/80 max-w-2xl mx-auto">
+               Below is a detailed description of my experiences with a few different software and development processes.
+        </div>
+
+        <div class="space-y-4">
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-300">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <div class="flex items-center gap-4">
+                        <img src="images/game.svg" class="h-10 w-auto" alt="Adobe XD">
+                        <h3 class="text-xl font-bold text-white">Game Development</h3>
+                    </div>
+                    <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </span>
+                </summary>
+                <div class="p-6 pt-0 text-white/90 border-t border-white/10">
+                    <p class="leading-relaxed mb-6 mt-4">
+                        My passion for game development has been a driving force in my time studying medialogy, leading me to explore various aspects of the field.<br><br>
+                        I have experience with both <strong>Unity and Unreal Engine</strong>, where I have worked on projects ranging from small prototypes to larger,
+                        more complex games.<br><br>My skills include <strong>programming in C# for Unity and Blueprints for Unreal Engine, as well as 3D modeling and animation
+                        using Blender</strong>. I have also been involved in sound design and user testing, ensuring that the games I work on provide an engaging and immersive
+                        experience for players.
+                    </p>
+                        
+                    <div class="flex flex-wrap gap-4 justify-center">
+                       <div class="mb-4 flex justify-center mt-4 gap-5">
+                            <a href="https://ronaas.itch.io/beeahero" target="_blank" 
+                            class="inline-block bg-purple-600 text-white w-50 px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition">
+                                Bee a Hero - Itch.io
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </details>
+
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <div class="flex items-center gap-4">
+                        <img src="images/check.svg" class="h-10 w-auto" alt="Frontend">
+                        <h3 class="text-xl font-bold text-white">User testing</h3>
+                    </div>
+                    <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </span>
+                </summary>
+                <div class="p-6 pt-0 text-white/90 border-t border-white/10">
+                    <p class="leading-relaxed mt-4">
+                     During my education, I have been involved in various <strong>user testing processes</strong>, where I have gained experience in designing and 
+                     conducting <strong>tests to evaluate the usability and effectiveness of different products and interfaces</strong>.<br><br>This includes creating <strong>test plans, 
+                     recruiting participants, and analyzing feedback to identify areas for improvement</strong>. I have also worked on implementing changes based on user 
+                     feedback, ensuring that the final product meets the needs and expectations of its users.
+
+                      <br><br>See some of my work under <a href="#projects" class="fw-bold italic font-bold underline">"Projects"</a>
+                    </p>
+                </div>
+            </details>
+
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <div class="flex items-center gap-4">
+                        <img src="images/chart.svg" class="h-10 w-auto" alt="database ikon">
+                        <h3 class="text-xl font-bold text-white">Data Visualization</h3>
+                    </div>
+                    <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" /></svg>
+                    </span>
+                </summary>
+                <div class="p-6 pt-0 text-white/90 border-t border-white/10">
+                    <p class="leading-relaxed mt-4">
+                        I have experience in data visualization, where I have worked on projects that involve <strong>creating 
+                        visual representations of complex data sets to facilitate understanding and decision-making</strong>.<br><br> 
+                        This includes <strong>using Python libraries like Matplotlib, Seaborn and Bokeh</strong> to create interactive dashboards 
+                        and visualizations that effectively communicate insights and trends.<br><br>I have also been involved in the process 
+                        of <strong>data cleaning, analysis and data wrangling</strong>, ensuring that the visualizations are based on accurate and relevant data.
+
+                      <br><br>See some of my work under <a href="#projects" class="fw-bold italic font-bold underline">"Projects"</a>
+                    </p>
+                </div>
+            </details>
+
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-300">
+              <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                  <div class="flex items-center gap-4">
+                      <img src="images/user.svg" class="h-10 w-auto" alt="WordPress/CMS logo">
+                      <h3 class="text-xl font-bold text-white">UI & UX</h3>
+                  </div>
+                  <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                  </span>
+              </summary>
+
+                <div class="p-6 md:p-8 pt-0 text-white/90 border-t border-white/10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-6">
+                        <p>
+                            I have a <strong>strong background in UI and UX design</strong>, where I have worked on projects that involve <strong>creating intuitive and 
+                            visually appealing interfaces for various applications</strong>.<br><br>This includes <strong>designing paper prototypes and digital prototypes 
+                            using tools like Figma and unity</strong>, as well as <strong>conducting user research and usability testing</strong> to ensure that the designs 
+                            meet the needs of the target audience.<br><br>I have also been involved in the <strong>implementation of UI/UX designs, collaborating 
+                            with developers to bring the designs to life</strong> and ensure a seamless user experience.
+                        </p>
+                        <div class="grid grid-cols-1 gap-2 mb-6">
+                            <img src="images/Ui.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                        </div>
+                          <p>
+                            See some of my work under 
+                            <a href="#projects" class="fw-bold italic font-bold underline">
+                                "Projects"
+                            </a>
+                          </p>
+                        
+                    </div>
+                </div>
+            </details>
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-300 mt-4">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <div class="flex items-center gap-4">
+                        <img src="images/unity.svg" class="h-10 w-auto" alt="Atom logo">
+                        <h3 class="text-xl font-bold text-white">Shading and Envoirement</h3>
+                    </div>
+                    <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </summary>
+
+                <div class="p-6 md:p-8 pt-0 text-white/90 border-t border-white/10">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-6">
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="space-y-3">
+                                    <p class="leading-relaxed">
+                                        I have experience with <strong>shading and environment design</strong>, where I have worked on projects that 
+                                        involve creating visually stunning and immersive <strong>environments for games and other applications</strong>.<br><br> 
+                                        This includes <strong>using tools like Unity and Unreal Engine to create detailed and realistic environments</strong>, 
+                                        as well as designing and <strong>implementing shaders to enhance the visual quality</strong> of the scenes.<br><br>I have also 
+                                        been involved in the process of <strong>optimizing environments for performance</strong>, ensuring that they run smoothly 
+                                        while maintaining a high level of visual fidelity.
+                                    </p>
+                                    <p>
+                                        <br><br>See some of my work under <a href="#projects" class="fw-bold italic font-bold underline">"Projects"</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="space-y-6">
+                            <div class="flex items-start gap-4">
+                                <div class="space-y-3">
+                                    <div class="grid grid-cols-1 gap-2 mb-6">
+                                        <img src="images/Terrain Texture.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                                        <img src="images/Early Terrain.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from Bee a Hero">
+                                        <img src="images/Shading.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from bee a Hero">
+                                        <img src="images/Shading2.png" class="rounded-lg h-30 w-full object-cover border hover:scale-105 transition" alt="Screenshot from bee a Hero">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </details>
+
+            <details class="group bg-white/10 border border-white/20 rounded-2xl overflow-hidden backdrop-blur-sm transition-all duration-300 mt-4">
+                <summary class="flex items-center justify-between p-6 cursor-pointer list-none">
+                    <div class="flex items-center gap-4">
+                        <img src="images/grad.svg" class="h-10 w-auto" alt="Photoshop logo">
+                        <h3 class="text-xl font-bold text-white">HTX 2019-2021</h3>
+                    </div>
+                    <span class="text-white transition-transform duration-300 group-open:rotate-180">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </span>
+                </summary>
+
+                <div class="p-6 md:p-8 pt-0 text-white/90 border-t border-white/10">
+                    <div class="grid grid-cols-1 lg:grid-cols-1 gap-8 mt-6">
+                         <p>
+                            During my time at HTX from 2019 to 2021, I had the opportunity to work on a variety of projects that allowed me 
+                            to develop and refine my skills in game development, UI/UX design, and content management systems. These projects 
+                            provided valuable hands-on experience and helped me build a strong foundation in these areas, which I have continued 
+                            to build upon in my subsequent work. <br>
+                            
+                        
+                            <a href="https://docs.google.com/presentation/d/1o5_bmdELa_VZ8e9Xe2Rq49_DDpEhrJuMiU4q9WijBmo/edit?usp=sharing" target="_blank" 
+                                class="inline-block bg-purple-600 text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-purple-700 transition mt-4">
+                                See presentation
+                            </a>
+                        </p>
+                        <div class="pt-4 border-t border-white/5">
+
+                                
+                                <div class="flex items-center gap-3 mb-2 mt-2">
+                                    <span class="font-bold uppercase tracking-widest text-blue-400">Visual Novel (Ren'Py)</span>
+                                    <img src="images/prototyper/ren'pylogo.png" class="h-8 opacity-80" alt="RenPy logo">
+                                </div>
+                                <div class="grid grid-cols-4 gap-2">
+                                    <img src="images/prototyper/game1.png" class="col-span-4 h-48 w-full object-cover rounded-lg border border-white/10" alt="Game Start">
+                                    <img src="images/prototyper/game2.png" class="col-span-2 w-full object-cover rounded-lg border border-white/10" alt="Game Screen">
+                                    <img src="images/prototyper/game3.png" class="col-span-2 w-full object-cover rounded-lg border border-white/10" alt="Game Screen">
+                                    <img src="images/prototyper/game4.png" class="col-span-2 w-full object-cover rounded-lg border border-white/10" alt="Game Screen">
+                                    <img src="images/prototyper/game5.png" class="col-span-2 w-full object-cover rounded-lg border border-white/10" alt="Game Screen">
+                                </div> 
+                                
+                        </div>
+                        <div class="space-y-4">
+                            <p  class="leading-relaxed">
+                                In addition to the visual novel project, I also worked on a content management system project using WordPress. 
+                                This involved designing and developing a website that allowed users to easily manage and publish content, as well 
+                                as implementing custom themes and plugins to enhance the functionality of the site. Through this project, I gained 
+                                valuable experience in web development and content management systems, which has been beneficial in my subsequent 
+                                work in UI/UX design and game development. 
+                        
+                            </p>
+                            <div class="p-4 bg-purple-500/10 rounded-xl border border-purple-500/20 italic text-sm">
+                                "I have also worked extensively with WordPress in the course “Digital Design and Development” at HTX, where over a period 
+                                of four weeks I developed, tested, and redesigned a UI/UX prototype."
+                            </div>
+
+                            
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                          <div class="h-16 w-full bg-white/5 col-span-1 md:col-span-2 rounded-md flex items-center justify-center text-[10px] font-bold">HTX PROJECT</div>
+                            <img src="images/prototyper/quotebyquote/q1.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q2">
+                            <img src="images/prototyper/quotebyquote/q2.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q2">
+                            <img src="images/prototyper/quotebyquote/q3.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q3">
+                            <img src="images/prototyper/quotebyquote/q4.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q4">
+                            <img src="images/prototyper/quotebyquote/q5.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q5">
+                            <img src="images/prototyper/quotebyquote/q6.png" class="h-32 w-full object-cover rounded-md border border-white/10 hover:scale-105 transition" alt="Q6">
+                            
+                        </div>
+                          <p>
+                          <br><br>See some of my work under <a href="#projects" class="fw-bold italic font-bold underline">"Projects"</a>
+                        </p>
+                    </div>
+
+                </div>
+            </details>
+
+
+        </div>
+    </div>
+</section>
+
+
+
+  <section id="kontakt" class="py-20">
+    <div class="container mx-auto px-6 max-w-3xl">
+      <div class="bg-white flex justify-center gap-10 sm:gap-20 p-10 md:p-16 rounded-3xl shadow-2xl">
+        <a href="https://github.com/Seckit909" target="_blank" rel="noopener noreferrer" class="hover:opacity-75 transition-opacity">
+            <img src="images/gitmis.png" class="h-20 w-auto" alt="GitHub profil">
+            <p class="text-purple-900 text-center font-bold mt-1">GitHub</p>
+        </a>
+
+        <a href="https://www.linkedin.com/in/alfred-thorlaksen-4b9b89368/" target="_blank" rel="noopener noreferrer" class="hover:opacity-75 transition-opacity">
+            <img src="images/linkedin.png" class="h-20 w-auto" alt="LinkedIn profil">
+            <p class="text-purple-900 text-center font-bold mt-1">LinkedIn</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-8 text-center opacity-70 text-sm">
+    <p>&copy; 2026 | Alfred Thorlaksen | Bygget med Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>
